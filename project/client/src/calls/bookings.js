@@ -3,7 +3,6 @@ import { axiosInstance } from ".";
 export const makePayment = async (token, amount) => {
     try{
         const response = await axiosInstance.post('/api/bookings/make-payment', {token, amount});
-        // console.log(token, amount, response);
         return response.data;
     }catch(err){
         return err.response

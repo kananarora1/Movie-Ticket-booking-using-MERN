@@ -9,10 +9,6 @@ const TheatreFormModal = ({isModalOpen, setIsModalOpen, selectedTheatre, setSele
     const dispatch = useDispatch();
     const { user } = useSelector((state) => state.user)
 
-  // const handleChange = (value) => {
-  //   console.log(`selected ${value}`);
-  // }
-
   const onFinish = async (values)  => {
     try{
       dispatch(showLoading());

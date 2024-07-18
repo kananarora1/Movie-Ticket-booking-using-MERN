@@ -103,8 +103,6 @@ const TheatresTable = () => {
         getData();
       }, []);
 
-      // console.log(theatres.length > 0 && theatres);
-
     return(
       <>
         {theatres && theatres.length > 0 && <Table dataSource={theatres} columns={columns} />}

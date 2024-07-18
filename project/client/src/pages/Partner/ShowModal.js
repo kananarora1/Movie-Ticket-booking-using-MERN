@@ -73,7 +73,6 @@ const ShowModal = ({
       if (view === "form") {
         response = await addShow({ ...values, theatre: selectedTheatre._id });
       } else {
-        // console.log(view, selectedTheatre, selectedTheatre._id);
         response = await updateShow({
           ...values,
           showId: selectedShow._id,

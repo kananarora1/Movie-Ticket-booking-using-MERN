@@ -55,16 +55,12 @@ const MovieForm = ({
     }
   };
 
-  // const handleOk = () => {
-  //   setIsModalOpen(false); onOk={handleOk}
-  // }
 
   const handleCancel = () => {
     setIsModalOpen(false);
     setSelectedMovie(null);
   };
 
-  // console.log(selectedMovie);
 
   return (
     <Modal
